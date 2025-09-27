@@ -11,7 +11,7 @@ let filteredProxyList = []
 let selectedProxy = null
 const defaultProxyUrl = "https://raw.githubusercontent.com/AFRcloud/ProxyList/refs/heads/main/ProxyList2.txt"
 
-const serverDomains = ["siren.afrcloud.site","afrcloud.biz.id"]
+const serverDomains = ["siren.afrcloud.site"]
 let selectedServerDomain = serverDomains[0] // Default to first domain
 const defaultUUID = "bbbbbbbb-cccc-4ddd-eeee-ffffffffffff"
 const itemsPerPage = 10
