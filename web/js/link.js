@@ -19,25 +19,61 @@ let currentPage = 1
 
 const pathTemplate = "/afrcloud/{ip}-{port}"
 
-// Array of bug options for easy management
+const urlList = [
+     "add.customlinks.appsflyer.com",
+     "api.midtrans.com",
+     "api22-normal-c-alisg.tiktokv.com",
+     "api24-normal-alisg.tiktokv.com",
+     "app-stg.gopay.co.id",
+     "app.gopay.co.id",
+     "app.midtrans.com",
+     "ava.game.naver.com",
+     "blog.ruangguru.com",
+     "blog.webex.com",
+     "cache.netflix.com",
+     "cdn.cookielaw.org",
+     "cdn.customlinks.appsflyer.com",
+     "cdn.jsdelivr.net",
+     "cdn.shopify.com",
+     "cdn3.optimizely.com",
+     "collection.linefriends.com",
+     "creativeservices.netflix.com",
+     "customlinks.appsflyer.com",
+     "dashboard.midtrans.com",
+     "dev.appsflyer.com",
+     "df.game.naver.com",
+     "edu.ruangguru.com",
+     "fonts.shopifycdn.com",
+     "grabacademyportal.grab.com",
+     "graph.instagram.com",
+     "lipcon.com",
+     "investor.fb.com",
+     "io.ruangguru.com",
+     "linefriendssquare.com",
+     "marketplace.zoom.us",
+     "news.zoom.us",
+     "nontontv.vidio.com",
+     "npca.netflix.com",
+     "partner.zoom.us",
+     "quiz.int.vidio.com",
+     "st1.zoom.us",
+     "store.linefriends.com",
+     "support.zoom.us",
+     "twitter.com",
+     "www.linkedin.com",
+     "www.zoom.com",
+     "www.zoom.us",
+     "x.com",
+     "zaintest.vuclip.com",
+     "zoomcares.zoom.us",
+     "zoomgov.com"
+];
+
 const bugOptions = [
   { value: "", label: "Default" },
-  { value: "support.zoom.us", label: "ZOOM" },
-  { value: "zoomgov.com", label: "ZOOMGOV" },
-  { value: "ava.game.naver.com", label: "WLG" },
-  { value: "graph.instagram.com", label: "IG" },
-  { value: "df.game.naver.com", label: "DNF" },
-  { value: "quiz.int.vidio.com", label: "VIDIO" },
-  { value: "api24-normal-alisg.tiktokv.com", label: "TIKTOK" },
-  { value: "api22-normal-c-alisg.tiktokv.com", label: "TIKTOK 2" },  
-  { value: "zaintest.vuclip.com", label: "VUCLIP" },
-  { value: "help.viu.com", label: "VIU" },
-  { value: "grabacademyportal.grab.com", label: "GRAB" },
-  { value: "live.iflix.com", label: "IFLIX" },
-  { value: "store.linefriends.com", label: "LINE" },
-  { value: "cache.netflix.com", label: "NETFLIX" },
-  { value: "customlinks.appsflyer.com", label: "APPSFLYER" }
+  ...urlList.map(url => ({ value: url, label: url }))
 ];
+
 
 // DOM elements
 const proxyListSection = document.getElementById("proxy-list-section")
