@@ -1,11 +1,11 @@
 const CONFIG = {
   'proxyListUrl': "https://raw.githubusercontent.com/AFRcloud/ProxyList/refs/heads/main/ProxyList.txt",
   'apiCheckUrl': "https://api.jb8fd7grgd.workers.dev/",
-  'mainDomains': ["siren.afrcloud.site"],
+  'mainDomains': ["siren.tedx.dpdns.org"],
   'defaultUuid': 'bbbbbbbb-cccc-4ddd-eeee-ffffffffffff',
   'maxProxies': 0x32,
   'defaultProxyCount': 0x5,
-  'pathTemplate': "/afrcloud/{ip}-{port}"
+  'pathTemplate': "/tedx/{ip}-{port}"
 };
 let proxyList = [];
 let filteredProxyList = [];
